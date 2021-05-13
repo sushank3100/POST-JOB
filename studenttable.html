@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=67da9ce2fd07474e0e4cb72471fbdcac">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" />
+    <script src="https://use.fontawesome.com/0a34a79056.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/assets/js/validation.js"></script>
+
+    <style>
+        body {
+            background-image: url("/assets/img/2.png");
+            background-color: rgb(186, 122, 245);
+        }
+
+        #pagefooter {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-light bg-light navbar-expand-lg" id="myNavbar">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <h2><a href="/landingpage.html" class="navbar-brand ">POST JOB</a></h2>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ml-auto nav-fill">
+
+                <li class="nav-item px-4">
+                    <a href="/placementdashboard.html" class="nav-link active">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item px-4">
+                    <a href="/studenttable.html" class="nav-link ">Student Details</a>
+                </li>
+                <li class="nav-item px-4">
+                    <a href="#" class="nav-link ">Organization Details</a>
+                </li>
+                <li class="nav-item px-4 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profile</a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+                        <a class="dropdown-item" href="#">Edit college info</a>
+                        <a class="dropdown-item" href="/studenttable.html">Edit Student Details</a>
+                        <a class="dropdown-item" href="#">Edit Profile</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <div id="wrapper">
+        <div class="container-fluid">
+            <h3 class="text-white mb-4">Batch 2020</h3>
+            <div class="card shadow">
+                <div class="card-header py-3">
+                    <p class="text-primary m-0 font-weight-bold">Student Info</p>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6 text-nowrap">
+                            <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable">
+                                <label>Show&nbsp;<select
+                                        class="form-control form-control-sm custom-select custom-select-sm">
+                                        <option value="10" selected="">10</option>
+                                        <option value="25">25</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select>&nbsp;</label></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-md-right dataTables_filter" id="dataTable_filter"><label><input
+                                        type="search" class="form-control form-control-sm" aria-controls="dataTable"
+                                        placeholder="Search"></label></div>
+                        </div>
+                    </div>
+                    <div class="table-responsive table mt-2" id="dataTable" role="grid"
+                        aria-describedby="dataTable_info">
+                        <table class="table my-0" id="dataTable">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Branch</th>
+                                    <th>Mail Id</th>
+                                    <th>CGPA</th>
+                                    <th>Mobile No.</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Narwade Sushank</td>
+                                    <td>ECE</td>
+                                    <td>sushank@mail.com</td>
+                                    <td>8.0</td>
+                                    <td>54651681</td>
+                                    <td>NO</td>
+                                </tr>
+                                <tr>
+                                    <td>Srinivas</td>
+                                    <td>EEE</td>
+                                    <td>srinivas@mail.com</td>
+                                    <td>8.5</td>
+                                    <td>65116321</td>
+                                    <td>YES</td>
+                                </tr>
+                                <tr>
+                                    <td>Sai Teja</td>
+                                    <td>CSE</td>
+                                    <td>teja@mail.com</td>
+                                    <td>9.0</td>
+                                    <td>54651681<br></td>
+                                    <td>NO</td>
+                                </tr>
+                                <tr>
+                                    <td>Yeshwanth</td>
+                                    <td>IT</td>
+                                    <td>yeshwanth@mail.com</td>
+                                    <td>9.2</td>
+                                    <td>54651681<br></td>
+                                    <td>YES</td>
+                                </tr>
+                                <tr>
+                                    <td>Sandeep</td>
+                                    <td>ECE</td>
+                                    <td>sandeep@mail.com</td>
+                                    <td>8.2</td>
+                                    <td>54651681<br></td>
+                                    <td>NO</td>
+                                </tr>
+                                <tr>
+                                    <td>Thirumalesh</td>
+                                    <td>CSE</td>
+                                    <td>thirumalesh@mail.com</td>
+                                    <td>7.9</td>
+                                    <td>32162635</td>
+                                    <td>NO</td>
+                                </tr>
+                                <tr>
+                                    <td>Pruthvi</td>
+                                    <td>Mech</td>
+                                    <td>pruthvi@mail.com</td>
+                                    <td>7.7</td>
+                                    <td>65165165</td>
+                                    <td>NO</td>
+                                </tr>
+                                <tr>
+                                    <td>Shiva</td>
+                                    <td>Civil</td>
+                                    <td>shiva@mail.com</td>
+                                    <td>7.89</td>
+                                    <td>51651684</td>
+                                    <td>YES</td>
+                                </tr>
+                                <tr>
+                                    <td>Kushik</td>
+                                    <td>Auto</td>
+                                    <td>kushik@mail.com</td>
+                                    <td>8.4</td>
+                                    <td>32165165</td>
+                                    <td>NO</td>
+                                </tr>
+                                <tr>
+                                    <td>Akshay</td>
+                                    <td>CSE</td>
+                                    <td>akshay@mail.com</td>
+                                    <td>8.8</td>
+                                    <td>65149856</td>
+                                    <td>YES</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td><strong>Name</strong></td>
+                                    <td><strong>Branch</strong></td>
+                                    <td><strong>Mail Id</strong></td>
+                                    <td><strong>CGPA</strong></td>
+                                    <td><strong>Mobile No.</strong></td>
+                                    <td><strong>Status</strong></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 align-self-center">
+                            <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Showing 1 to
+                                10 of 3000</p>
+                        </div>
+                        <div class="col-md-6">
+                            <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
+                                <ul class="pagination">
+                                    <li class="page-item disabled"><a class="page-link" href="#"
+                                            aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span
+                                                aria-hidden="true">»</span></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: lightgrey;" id="pagefooter" class="footer p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 my-auto h-100 text-center text-lg-left">
+                    <ul class="list-unstyled mb-2" style="list-style:disc;">
+                        <li class="list-item"><a href="#">About</a></li>
+                        <li class="list-item"><a href="/contactus.html">Contact</a></li>
+                        <li class="list-item"><a href="#">Terms of  Use</a></li>
+                        <li class="list-item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 my-auto h-100 text-center text-lg-right">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook-square fa-2x fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram fa-2x fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Brand 2020. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="/assets/js/script.min.js?h=b86d882c5039df370319ea6ca19e5689"></script>
+</body>
+
+</html>
